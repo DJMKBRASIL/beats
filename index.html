@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DJ MK | Beats</title>
+  <meta name="description" content="Loja de beats estilo Netflix — ouvir, filtrar e comprar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hdr">
+    <div class="hdr__inner">
+      <a class="brand" href="#" aria-label="Página inicial">
+        <div class="brand__logo">MK</div>
+        <span class="brand__name">Beats</span>
+      </a>
+
+      <div class="search" role="search">
+        <input id="q" placeholder="Buscar por nome, gênero, BPM ou tom…" autocomplete="off" />
+      </div>
+
+      <nav class="social">
+        <a class="ico ico--wa" href="https://wa.me/5541998949082" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <!-- WhatsApp SVG -->
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.1 17.3c-.3-.1-1.8-.9-2.1-1s-.5-.1-.7.1-.8 1-.9 1.1-.3.2-.6.1-1.3-.5-2.4-1.5c-.9-.8-1.5-1.8-1.7-2.1s0-.5.1-.6l.4-.5c.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.7c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.6 1 2.8c.1.2 1.8 2.9 4.3 4 2.6 1.2 2.6.8 3.1.8.4 0 1.6-.6 1.8-1.2.2-.6.2-1.2.1-1.3 0-.1-.2-.1-.5-.2z" fill="currentColor"/><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.7z" fill="currentColor"/></svg>
+        </a>
+        <a class="ico ico--ig" href="https://instagram.com/djmkbrasil" target="_blank" rel="noopener" aria-label="Instagram">
+          <!-- Instagram SVG -->
+          <svg viewBox="0 0 512 512" aria-hidden="true"><path d="M349.33 69.33H162.67A93.44 93.44 0 0 0 69.33 162.67v186.66A93.44 93.44 0 0 0 162.67 442.67h186.66A93.44 93.44 0 0 0 442.67 349.33V162.67A93.44 93.44 0 0 0 349.33 69.33zm61.34 280a61.43 61.43 0 0 1-61.34 61.34H162.67a61.43 61.43 0 0 1-61.34-61.34V162.67a61.43 61.43 0 0 1 61.34-61.34h186.66a61.43 61.43 0 0 1 61.34 61.34z" fill="currentColor"/><path d="M377.33 162.67a28.44 28.44 0 1 1 28.44-28.44 28.44 28.44 0 0 1-28.44 28.44zM256 149.33A106.67 106.67 0 1 0 362.67 256 106.79 106.79 0 0 0 256 149.33zm0 176A69.33 69.33 0 1 1 325.33 256 69.41 69.41 0 0 1 256 325.33z" fill="currentColor"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__inner">
+        <div>
+          <h1>Beats por DJ MK</h1>
+          <p>Explore os lançamentos, filtre por gênero, BPM e tom, e ouça em alta. Layout fluido, estilo streaming.</p>
+          <div class="badges">
+            <span class="badge">Mobile first</span>
+            <span class="badge">Player embutido</span>
+            <span class="badge">JSON dinâmico</span>
+          </div>
+        </div>
+        <div class="hero__art">
+          <img alt="Mockup da vitrine de beats" src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200&auto=format&fit=crop" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <h2>Novos Beats</h2>
+      <div class="scroller" id="row-new" aria-live="polite"></div>
+    </section>
+
+    <section class="row">
+      <h2>Trap / Rap</h2>
+      <div class="scroller" id="row-trap" aria-live="polite"></div>
+    </section>
+
+    <section class="row">
+      <h2>Funk / BR</h2>
+      <div class="scroller" id="row-funk" aria-live="polite"></div>
+    </section>
+
+    <section class="row">
+      <h2>Lo‑Fi / Chill</h2>
+      <div class="scroller" id="row-lofi" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="ftr__inner">
+      <div>
+        <div class="ftr__brand">DJ MK • Loja de Beats</div>
+        <div class="ftr__hint">
+          Contato: <a href="mailto:djmkbrasil@gmail.com">djmkbrasil@gmail.com</a> •
+          WhatsApp <a href="https://wa.me/5541998949082" target="_blank" rel="noopener">(41) 99894‑9082</a>
+        </div>
+      </div>
+      <div class="ftr__links">
+        <a href="https://instagram.com/djmkbrasil" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.djmkbrasil.com.br" target="_blank" rel="noopener">Site</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Player -->
+  <div class="modal" id="player" role="dialog" aria-modal="true" aria-labelledby="player-title">
+    <div class="dlg">
+      <button class="dlg__close" id="btn-close" aria-label="Fechar">×</button>
+      <div class="dlg__grid">
+        <div class="dlg__cover"><img id="p-cover" alt="Capa do beat" /></div>
+        <div class="dlg__info">
+          <h3 id="player-title">—</h3>
+          <div class="kv">
+            <div><b>Gênero:</b> <span id="p-genre"></span></div>
+            <div><b>BPM:</b> <span id="p-bpm"></span> • <b>Tom:</b> <span id="p-key"></span></div>
+            <div><b>Preço:</b> R$ <span id="p-price"></span> • <b>Licença:</b> <span id="p-lic"></span></div>
+            <div><b>Tags:</b> <span id="p-tags"></span></div>
+          </div>
+          <audio id="p-audio" controls preload="none" class="audio"></audio>
+          <div class="dlg__actions">
+            <a id="p-buy" class="btn primary" target="_blank" rel="noopener">Comprar este beat</a>
+            <a id="p-open-audio" class="btn" target="_blank" rel="noopener">Abrir áudio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
